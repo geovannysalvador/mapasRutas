@@ -2,6 +2,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 
+
+
+
 // Verificacion
 if (!navigator.geolocation){
   alert('Navegador no soporta la Geolocalizacion')
