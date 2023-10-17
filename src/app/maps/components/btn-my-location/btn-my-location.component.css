@@ -1,0 +1,37 @@
+button{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Animación personalizada */
+@keyframes funButton {
+  0% {
+      transform: scale(1);
+  }
+  30% {
+      transform: scale(1.1);
+  }
+  60% {
+      transform: scale(1);
+  }
+}
+
+/* Estilos personalizados para el botón */
+.btn-fun {
+  font-size: 1rem;
+  background-color: #ff6f61;
+  /*Cambiaelcolordefondoatugusto*/color: #fff;
+  /*Cambiaelcolordeltextoatugusto*/border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* animation: funButton 2s infinite; */
+   /* Aplicamos la animación personalizada */;
+  /* -webkit-animation: funButton 2s infinite; */
+}
+
+.btn-fun:hover {
+  background-color: #ff4837; /* Cambia el color de fondo al pasar el mouse por encima */
+}

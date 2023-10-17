@@ -7,7 +7,9 @@ import { environment } from '../../environments/environment';
 
 
 // para ver el mapa
-import Mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+import Mapboxgl from 'mapbox-gl';
+import { BtnMyLocationComponent } from './components/btn-my-location/btn-my-location.component';
+import { AngularLogoComponent } from './components/angular-logo/angular-logo.component'; // or "const mapboxgl = require('mapbox-gl');"
 
 (Mapboxgl as any).accessToken =  environment.mapbox_key
 
@@ -17,6 +19,8 @@ import Mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
     MapScreenComponent,
     MapViewComponent,
     LoadingComponent,
+    BtnMyLocationComponent,
+    AngularLogoComponent,
   ],
   imports: [
     CommonModule,
