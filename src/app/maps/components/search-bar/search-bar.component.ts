@@ -21,7 +21,7 @@ export class SearchBarComponent {
       this.placesService.getPlacesByQuery(query);
 
 
-    }, 400);
+    }, 450);
 
 
 
