@@ -6,6 +6,7 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { environment } from '../../environments/environment';
 
 
+
 // para ver el mapa
 import Mapboxgl from 'mapbox-gl';
 import { BtnMyLocationComponent } from './components/btn-my-location/btn-my-location.component';
