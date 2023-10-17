@@ -50,6 +50,13 @@ export class PlacesService {
 
   getPlacesByQuery( query:string = ''){
     //todo: evaluar cuando el quey marca nulo
+    // Cuando no hay nada no hacer la peticion http
+    if (query.length === 0) {
+      this.places = [];
+      this.isLoadingPlaces = false;
+
+      return;
+    }
 
     if( !this.userLocation) throw Error('No hay localizacion del usuario')
 
@@ -61,8 +68,7 @@ export class PlacesService {
       }
     })
       .subscribe( resp => {
-        console.log(resp.features);
-
+        // console.log(resp.features);
         this.isLoadingPlaces = false;
         this.places = resp.features;
 
